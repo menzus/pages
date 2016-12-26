@@ -1,3 +1,33 @@
 body {
-  background-color: #234123;
+    color: #000824;
+    font-family: Roboto; sans-serif;
+    margin: 0px;
+}
+
+div {
+    padding: 150px;
+}
+
+header {
+    background-color: #2A7FD3;
+}
+
+div#home {
+    background-color: #2A7FD3;
+}
+
+div#who-i-am {
+    background-color: #9FBFDF;
+}
+
+div#what-i-do {
+    background-color: #EEEEEE;
+}
+
+div#blog {
+    background-color: #949494;
+}
+
+div#contact {
+    background-color: #EEEEF2;
 }
