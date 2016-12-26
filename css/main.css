@@ -3,36 +3,19 @@ body {
     font-family: Roboto; sans-serif;
 }
 
+/* --- NAVBAR --- */
+
 .navbar {
-  background-color: #2A7FD3;
-  border: none;
-  margin-bottom: 0px;
-}
-
-.navbar-default: {
-    border-color: #000824;
-    background-color: #2A7FD3;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #000824;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000824;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #2A7FD3;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
+	padding-top:0px;
+	border-radius:0px !important;
+	margin-bottom:0px !important;
+	background-color: #EEEEEE;
+	border: none;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #000824;
-    font-family: Roboto; sans-serif;
+    font-size: 16px;
 }
 
 @media(min-width: 768px) {
