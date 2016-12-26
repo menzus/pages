@@ -61,3 +61,7 @@ div#footer .social ul li {
     display: inline;
     margin-right: 20px;
 }
+
+.blog-thumbnail {
+    padding: 15px;
+}
