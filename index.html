@@ -58,3 +58,8 @@ layout: default
         </p>
     </div>
 </div>
+
+
+{% for post in site.posts %}
+    {{ post.title }}
+{% endfor %}
