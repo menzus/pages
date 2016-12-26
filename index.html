@@ -40,11 +40,18 @@ layout: default
 <div id="blog" class="block">
     <div class="row">
         <h1>Blog posts</h1>
-        <p>
-            Eos quodsi doctus repudiare in, eos appetere instructior eu. Probo populo eripuit his ea,
-            at pro denique delectus adipiscing. Eu modus disputationi pro. Agam habemus an has.
-            Ignota inermis nusquam eum id, his viderer omittantur id, vix pertinax theophrastus eu.
-        </p>
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-s-12 col-md-6 col-lg-4 blog-thumbnail">
+                <h2>post.title</h2>
+                <p>
+                    No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
+                    Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
+                    Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
+                </p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 
@@ -58,8 +65,3 @@ layout: default
         </p>
     </div>
 </div>
-
-
-{% for post in site.posts %}
-    {{ post.title }}
-{% endfor %}
