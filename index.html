@@ -43,7 +43,7 @@ layout: default
         <div class="row">
             {% for post in site.posts %}
             <div class="col-s-12 col-md-6 col-lg-4 blog-thumbnail">
-                <h2>{{ post.title }}</h2>
+                <h2><a href="{{ post.url | prepend : site.baseurl }}">{{ post.title }}</a></h2>
                 <p>
                     {{ post.excerpt }}
                 </p>
