@@ -1,15 +1,50 @@
 body {
     color: #000824;
     font-family: Roboto; sans-serif;
-    margin: 0px;
 }
 
-.block {
-    padding: 100px 100px 150px 100px;
+.navbar {
+  background-color: #2A7FD3;
+  border: none;
+  margin-bottom: 0px;
 }
 
-header {
+.navbar-default: {
+    border-color: #000824;
     background-color: #2A7FD3;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000824;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000824;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #2A7FD3;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000824;
+    font-family: Roboto; sans-serif;
+}
+
+@media(min-width: 768px) {
+    .block {
+        padding: 150px;
+    }
+}
+
+@media(max-width: 768px) {
+    .block {
+        padding: 100px 50px 100px 50px;
+    }
 }
 
 div#home {
@@ -30,4 +65,10 @@ div#blog {
 
 div#contact {
     background-color: #EEEEF2;
+}
+
+div#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #444444;
 }
