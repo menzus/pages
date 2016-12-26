@@ -43,11 +43,9 @@ layout: default
         <div class="row">
             {% for post in site.posts %}
             <div class="col-s-12 col-md-6 col-lg-4 blog-thumbnail">
-                <h2>post.title</h2>
+                <h2>{{ post.title }}</h2>
                 <p>
-                    No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
-                    Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
-                    Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
+                    {{ post.excerpt }}
                 </p>
             </div>
             {% endfor %}
