@@ -1,19 +1,9 @@
 ---
 layout: post
-title:  "Markdown flavour"
+title:  "No mei putent recusabo consetetur"
 date:   2016-09-19 00:00:00 +0200
-tags: ['example', 'welcome']
 author: "Your Name"
 ---
-
-I have some text.
-
-I want some _italics_.
-
-I want some **bold**.
-
-# this is heading 1
-
-## this is heading 2
-
-### this is heading 3
+No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
+Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
+Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
