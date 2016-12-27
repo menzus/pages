@@ -136,10 +136,12 @@ div#contact {
    footer
 --------------------
 */
-div#footer .container {
+div#footer {
     background-color: #CBE86B;
     color: #1C140D;
+}
 
+div#footer .container {
     padding-top: 25px;
     padding-bottom: 10px;
 }
