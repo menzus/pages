@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Timing attack against String.equals() via Akka Http"
+title:  "Timing attack on String.equals()"
+tags: ['timing attack', 'akka-http', 'scala']
 date:   2016-12-27
 ---
 No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
