@@ -1,66 +1,148 @@
 ---
-title: Tamas Polgar
+description: Bla bla lba
 layout: default
+title: Tamas Polgar
 ---
-<div id="home" class="block">
-    <div class="row">
-        <h1>Hi. My name is Tamas.</h1>
-        <h2>Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.</h2>
-        <h2>Usu illud partem facilisi no.</h2>
-    </div>
-</div>
-
-<div id="who-i-am" class="block">
-    <div class="row">
-        <h1>Who I Am</h1>
-        <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
-        <p>
-            Ex aeque nominati gubergren duo, et modo maiestatis qui, reque dicam eos ea.
-            Ea accumsan copiosae platonem usu, te eum duis aliquid antiopam, meis debitis abhorreant pri ex.
-            Vim agam melius labores eu. Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.
-            Dicat evertitur ne vis, no eos sint habeo, causae pertinacia percipitur ad sit.
-            Zril appetere antiopam has eu. Quo te praesent expetendis delicatissimi, ius liber quodsi et,
-            ad agam appareat prodesset sed.
-        </p>
-    </div>
-</div>
-
-<div id="what-i-do" class="block">
-    <div class="row">
-        <h1>What I Do</h1>
-        <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
-        <p>
-            Possim consectetuer sed ei, pri dico quando in, iudico ridens vix te.
-            Vix ei tation legimus definiebas, sit in admodum efficiantur.
-            Usu illud partem facilisi no. Sed ludus evertitur reprehendunt te, habemus dissentias per id.
-        </p>
-    </div>
-</div>
-
-<div id="blog" class="block">
-    <div class="row">
-        <h1>Blog posts</h1>
+<body>
+    <div id="intro" class="block">
         <div class="row">
-            {% for post in site.posts %}
-            <div class="col-s-12 col-md-6 col-lg-4 blog-thumbnail">
-                <h2><a href="{{ post.url | prepend : site.baseurl }}">{{ post.title }}</a></h2>
-                <h4>{{ post.date | date_to_string }}</h4>
-                <p>
-                    {{ post.excerpt }}
-                </p>
-            </div>
-            {% endfor %}
+            <h1>Hi. My name is Tamas.</h1>
+            <h2>Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.</h2>
+            <h2>Usu illud partem facilisi no.</h2>
         </div>
     </div>
-</div>
 
-<div id="contact" class="block">
-    <div class="row">
-        <h1>Contact</h1>
-        <p>
-            No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
-            Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
-            Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
-        </p>
+    <div id="who-i-am" class="block">
+        <div class="row">
+            <h1>Who I Am</h1>
+            <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
+            <p>
+                Ex aeque nominati gubergren duo, et modo maiestatis qui, reque dicam eos ea.
+                Ea accumsan copiosae platonem usu, te eum duis aliquid antiopam, meis debitis abhorreant pri ex.
+                Vim agam melius labores eu. Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.
+                Dicat evertitur ne vis, no eos sint habeo, causae pertinacia percipitur ad sit.
+                Zril appetere antiopam has eu. Quo te praesent expetendis delicatissimi, ius liber quodsi et,
+                ad agam appareat prodesset sed.
+            </p>
+        </div>
     </div>
-</div>
+
+    <div id="what-i-do" class="block">
+        <div class="row">
+            <h1>What I Do</h1>
+            <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
+            <p>
+                Possim consectetuer sed ei, pri dico quando in, iudico ridens vix te.
+                Vix ei tation legimus definiebas, sit in admodum efficiantur.
+                Usu illud partem facilisi no. Sed ludus evertitur reprehendunt te, habemus dissentias per id.
+            </p>
+        </div>
+    </div>
+
+    <div id="blog" class="block">
+        <div class="row">
+            <h1>Blog posts</h1>
+            <div class="row">
+
+                <div class="col-s-12 col-md-6 blog-thumbnail">
+                    <h3>
+                        <a href="/pages/2016/12/27/timing-attack.html">Timing Attack on JWT Signature via Akka HTTP</a>
+                    </h3>
+                    <p class="read-length">5 minutes read</p>
+                    <p>No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
+                        Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
+                        Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.</p>
+                    </p>
+                    <p class="post-date">27 Dec 2016</p>
+                </div>
+
+                <div class="col-s-12 col-md-6 blog-thumbnail">
+                    <h3><a href="/pages/2016/09/18/documentation.html">Per cu delenit luptatum</a></h3>
+                    <p>No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
+                        Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
+                        Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.</p>
+                    </p>
+                    <p class="post-date">27 Dec 2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="block">
+        <div class="row">
+            <h1>Contact</h1>
+            <p>
+                No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
+                Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
+                Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
+            </p>
+            <p>
+                Here is my public key.
+            </p>
+            <p class="pgp-key">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
+                Version: GnuPG v2<br>
+                <br>
+                mQENBFhhQB0BCADCLMhzazr9oggqevgYu449oYEyyb0YukMhjRqSUDaCmEx9LgxW<br>
+                eTCiXORUTd2NoLSY2Ko4uqDAF7ODpgoUMpbqtcu31yvTX0n35f2zx5ciMzBY9/Fu<br>
+                ocQsbUpirW8Zgp5+Ga+RgKDI4jXui7HxUQo/2hnO0QVvC0/vapaTHsTm1sjghsz0<br>
+                Yioyj2nMMLA+xLSDqg6roy5cQLF7FeUUTxCrLTC//i8wBeiBJpT65k7zcPJ6Wjyy<br>
+                HabMCfDDi8Gms43MYWJqQfKUrCLUFpEWYqjSI5qNPZ1KWskPeAWbGAJ4bf/DBrJx<br>
+                JCHceKZqAj3VHiLcB5HXgdk/GyXoFOGGhKJxABEBAAG0I1RhbWFzIFBvbGdhciA8<br>
+                dG1zLnBvbGdhckBnbWFpbC5jb20+iQE/BBMBCAApBQJYYUAdAhsDBQkDwmcABwsJ<br>
+                CAcDAgEGFQgCCQoLBBYCAwECHgECF4AACgkQjD5oDnn4XiwNXAf/dpNZnD6MeeU+<br>
+                e6rXRtIvUbGb7BaC4gSmweOx+If5sCI2fDfUnlTccktqP7o7Pz6eUIpjOlkoiUCl<br>
+                VZP/B5boPaslqymVh2OJTFCBe+n0jD/hhC/cUXFyc0HnMCav6ZC9+aPoaTk55BP9<br>
+                9kpews1rJ/aggqK54isLmA96i9YCbmUA5VAefaWHN68SmroIHYQIoI6EPY8WtWb6<br>
+                o71uvgG+kCWCPFsjQeY053OENwIEAFY7Rp4juKlZUOtBZWJUezM8BDf+F3qyMbQT<br>
+                Os8HfmuvWr85Z4JreljlQpkmKM3fvx6VV/Z9lz0fmiLb49XqR+FQA5jLTpavnqIc<br>
+                ldTMYgG5zrkBDQRYYUAdAQgA0dBH8Y9AkXjU7YyY1R5szYaiDyZXnFLKKyowH3rN<br>
+                5w+Uq+EQLpEmXiKJcPn32j0Yuvi3xKBKdtvYFFoW3qM+iriWZN2ME2WQuAuax8bA<br>
+                HqXYm90Tq0L8C5nFpzUKRyLwrCzY0HS6KOBe1GIiNYoBOPbU3C2mM1pbORIqwKe+<br>
+                qMSWYFhcnKvesLeLuuPZ/DyKxxesO2FLenffUf1UzoNxQIqAgY7DeABmbTiduY9M<br>
+                4hadjD6zy3EHiWzPtjkw3uuHY41TQWxCoqDR56cQuTTD+XGMSXVI+TVdYUO0xWPN<br>
+                IEOc22y0xSV2MfRw4AS2aRy+GznG/jOEC/tu1pxMyKxCswARAQABiQElBBgBCAAP<br>
+                BQJYYUAdAhsMBQkDwmcAAAoJEIw+aA55+F4syyIH/1NQyjmOF42p/0Z0CqYaj8UY<br>
+                u+ekxVp6TrAwi6Ai758JiAxYQwynZW/S/QTSYur3GFfQqcCk2zkVjn8RqsegIBYo<br>
+                15XFvmeAaNP/JrVWSMz3zw6n9k27G7r4wGmeXbtjgSm9DpU9g9tzdEA8ljOUcUR0<br>
+                7PicJQr+BT4fNJsMRyETdKLv4UL95Au8j00GBlAxlD4Ipypsn+p61fY7UOhXY7lM<br>
+                GbFGA63R3SX/khrw861WOpU4e96O9KzpVjI6EDHGwZhrWaGiJORprHcvs99FKzAT<br>
+                qM6VAdOLmfY1WeM/vGUzPDiA8gjXEUkCm1bU2MJhYpc+gU+c1en631oGTR/z/zI=<br>
+                =NSOn<br>
+                -----END PGP PUBLIC KEY BLOCK-----<br>
+            </p>
+        </div>
+    </div>
+
+    <div id="footer" class="block">
+        <div class="row">
+            <div class="col-xs-6 copyright">
+                <span>© 2016 .... All rights reserved.</span>
+            </div>
+            <div class="col-xs-6 social">
+                <ul>
+                    <li>
+                        <a href="...">
+                            <span>G</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="...">
+                            <span>L</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="...">
+                            <span>E</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="...">
+                            <span>T</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
