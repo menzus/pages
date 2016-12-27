@@ -1,26 +1,15 @@
 body {
     color: #000824;
-    font-family: Roboto; sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
-/* --- NAVBAR --- */
-
-.navbar {
-	padding-top:0px;
-	border-radius:0px !important;
-	margin-bottom:0px !important;
-	background-color: #EEEEEE;
-	border: none;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #000824;
-    font-size: 16px;
-}
 
 @media(min-width: 768px) {
     .block {
-        padding: 150px;
+        padding: 125px;
+    }
+    .monospace {
+        font-size: 100%;
     }
 }
 
@@ -28,40 +17,86 @@ body {
     .block {
         padding: 100px 50px 100px 50px;
     }
+    .monospace {
+        font-size: 65%;
+    }
 }
 
-div#home {
-    background-color: #2A7FD3;
+.block .row {
+    max-width: 1024px;
+}
+
+.pgp-key {
+    font-family: Roboto Mono, monospace;
+    display: none;
+}
+
+div#intro {
+    background-color: #FFFFFF;
+    color: #1C140D;
+    min-height: 100vh;
 }
 
 div#who-i-am {
-    background-color: #9FBFDF;
+    background-color: #CBE86B;
+    color: #1C140D;
 }
 
 div#what-i-do {
-    background-color: #EEEEEE;
+    background-color: #F2E9E1;
+    color: #1C140D;
 }
 
 div#blog {
-    background-color: #949494;
+    background-color: #1C140D;
+    color: #F2E9E1;
 }
 
 div#contact {
-    background-color: #EEEEF2;
+    background-color: #CBE86B;
+    color: #1C140D;
 }
 
 div#footer {
-    background-color: #333333;
-    color: #AAAAAA;
+    background-color: #CBE86B;
+    color: #1C140D;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 div#footer .social ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+div#footer .social ul {
+    text-align: right;
 }
 
 .blog-thumbnail {
-    padding: 15px;
+    height: 275px;
+    padding: 35px;
+}
+
+.blog-thumbnail a {
+    color: #FFFFFF;
+}
+
+.blog-thumbnail a:hover {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.post-date {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.read-length {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 11px;
 }
