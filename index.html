@@ -1,151 +1,421 @@
----
-description: Bla bla lba
-layout: default
-title: Tamas Polgar
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tamas Polgar - Software engineer for tech companies and startups</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="I'm an independent software engineer based in London.">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Vendor Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /*
+        --------------------
+           general
+        --------------------
+        */
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .inline {
+            display: inline
+        }
+
+        @media(max-width: 767px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .container {
+                padding-top: 45px;
+                padding-bottom: 45px;
+            }
+        }
+
+        @media(min-width: 768px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .container {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
+
+        /*
+        --------------------
+           intro
+        --------------------
+        */
+        div#intro {
+            background-color: #20293F;
+            color: #F6F4E7;
+        }
+
+        /*
+        --------------------
+           who-i-am
+        --------------------
+        */
+        div#who-i-am {
+            background-color: #4D8E96;
+            color: #20293F;
+        }
+
+        /*
+        --------------------
+           what-i-do
+        --------------------
+        */
+        div#what-i-do {
+            background-color: #ABC2AB;
+            color: #20293F;
+        }
+
+        /*
+        --------------------
+           contact
+        --------------------
+        */
+        div#contact {
+            background-color: #DEE3C1;
+            color: #20293F;
+        }
+
+        .pgp-key {
+            font-family: Roboto Mono, monospace;
+        }
+
+        .pgp-key {
+            font-family: Roboto Mono, monospace;
+        }
+
+        div#contact a {
+            font-weight: bold;
+            color: #20293F;
+            text-decoration: none;
+        }
+
+        div#contact a:hover {
+            font-weight: bold;
+            color: #30394F;
+            text-decoration: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /*
+        --------------------
+           blog
+        --------------------
+        */
+        div#blog {
+            background-color: #F6F4E7;
+            color: #20293F;
+        }
+
+        .post-description {
+            padding-bottom: 10px
+        }
+
+        .blog-thumbnail a {
+            color: #555555;
+            text-decoration: none;
+        }
+
+        .blog-thumbnail a:hover {
+            color: #555555;
+            text-decoration: none;
+        }
+
+        .post-meta {
+            font-size: 80%;
+        }
+
+        .middle-dot { padding-left: .45em; padding-right: .45em}
+
+        @media(max-width: 768px) {
+            .blog-thumbnail {
+                margin-top: 10px;
+            }
+        }
+
+        /*
+        --------------------
+           footer
+        --------------------
+        */
+        div#footer {
+            background-color: #ABC2AB;
+            color: #20293F;
+        }
+
+        div#footer .container {
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
+
+        div#footer .social ul {
+            -webkit-padding-start: 10px;
+        }
+
+        div#footer .social ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        div#footer .social ul {
+            text-align: right;
+        }
+
+        .social a {
+            color: #20293F;
+            text-decoration: none;
+        }
+
+        .social a:hover {
+            color: #30394F;
+            text-decoration: none;
+        }
+
+        @media(max-width: 767px) {
+            .copyright {
+                font-size: 11px;
+            }
+
+            .fa-2x {
+                font-size: 1.25em;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .copyright {
+                font-size: 12px;
+            }
+
+            .fa-2x {
+                font-size: 2em;
+            }
+        }
+    </style>
+
+    <!-- Google Analytics Tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72162882-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- Custom JS -->
+    <script>
+      function togglePgpKey() {
+        var pgpKey = document.getElementById('pgp-key')
+        if(pgpKey.classList.contains('hidden')) {
+          pgpKey.classList.remove('hidden')
+        } else {
+          pgpKey.classList.add('hidden')
+        }
+      }
+    </script>
+  </head>
 <body>
-    <div id="intro">
-        <div class="container">
-            <h1>Hi. My name is Tamas.</h1>
-            <h2>Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.</h2>
-            <h2>Usu illud partem facilisi no.</h2>
-        </div>
+<div id="intro">
+    <section class="container">
+        <h1>Hi. My name is Tamas.</h1>
+        <h2>I'm a software engineer.</h2>
+    </section>
+</div>
+
+<div id="who-i-am">
+    <section class="container">
+        <h2>Who I Am</h2>
+        <p>
+            Dynamic and innovative IT professional, specialising in Agile and Scrum methodology, Scala, Java development
+            and software testing across various sectors, including finance, international media and sports betting.
+            Passionate about continually learning and growing in the industry, utilising new technologies and
+            methodologies to identify and implement effective change for clients, following projects through
+            the entire lifecycle from inception to successful completion. Able to find creative solutions to
+            complex problems, drawing on 9 years of commercial experience and 2 years in research and development to
+            develop solid skills in communication, prioritisation and attention to detail. Currently pursuing an
+            extracurricular passion for agile startup development, developing additional knowledge and skills.
+        </p>
+    </section>
+</div>
+
+<div id="what-i-do">
+    <section class="container">
+        <h2>What I Do</h2>
+        <p>Architect systems, design solutions, implement ideas.</p>
+        <p>Code review, code cleanups.</p>
+        <p>Security review, penetration testing.</p>
+    </section>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>
+            I'd be happy to discuss your software development needs, please don't hesitate to contact me.
+        </p>
+        <p>
+            Here is my <a href="javascript:void(0)" onclick="togglePgpKey()">PGP key</a>.
+        </p>
+        <p class="pgp-key hidden" id="pgp-key">
+            <br>
+            Key id: 8C3E680E79F85E2C<br>
+            <br>
+            -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
+            Version: GnuPG v2<br>
+            <br>
+            mQENBFhhQB0BCADCLMhzazr9oggqevgYu449oYEyyb0YukMhjRqSUDaCmEx9LgxW<br>
+            eTCiXORUTd2NoLSY2Ko4uqDAF7ODpgoUMpbqtcu31yvTX0n35f2zx5ciMzBY9/Fu<br>
+            ocQsbUpirW8Zgp5+Ga+RgKDI4jXui7HxUQo/2hnO0QVvC0/vapaTHsTm1sjghsz0<br>
+            Yioyj2nMMLA+xLSDqg6roy5cQLF7FeUUTxCrLTC//i8wBeiBJpT65k7zcPJ6Wjyy<br>
+            HabMCfDDi8Gms43MYWJqQfKUrCLUFpEWYqjSI5qNPZ1KWskPeAWbGAJ4bf/DBrJx<br>
+            JCHceKZqAj3VHiLcB5HXgdk/GyXoFOGGhKJxABEBAAG0I1RhbWFzIFBvbGdhciA8<br>
+            dG1zLnBvbGdhckBnbWFpbC5jb20+iQE/BBMBCAApBQJYYUAdAhsDBQkDwmcABwsJ<br>
+            CAcDAgEGFQgCCQoLBBYCAwECHgECF4AACgkQjD5oDnn4XiwNXAf/dpNZnD6MeeU+<br>
+            e6rXRtIvUbGb7BaC4gSmweOx+If5sCI2fDfUnlTccktqP7o7Pz6eUIpjOlkoiUCl<br>
+            VZP/B5boPaslqymVh2OJTFCBe+n0jD/hhC/cUXFyc0HnMCav6ZC9+aPoaTk55BP9<br>
+            9kpews1rJ/aggqK54isLmA96i9YCbmUA5VAefaWHN68SmroIHYQIoI6EPY8WtWb6<br>
+            o71uvgG+kCWCPFsjQeY053OENwIEAFY7Rp4juKlZUOtBZWJUezM8BDf+F3qyMbQT<br>
+            Os8HfmuvWr85Z4JreljlQpkmKM3fvx6VV/Z9lz0fmiLb49XqR+FQA5jLTpavnqIc<br>
+            ldTMYgG5zrkBDQRYYUAdAQgA0dBH8Y9AkXjU7YyY1R5szYaiDyZXnFLKKyowH3rN<br>
+            5w+Uq+EQLpEmXiKJcPn32j0Yuvi3xKBKdtvYFFoW3qM+iriWZN2ME2WQuAuax8bA<br>
+            HqXYm90Tq0L8C5nFpzUKRyLwrCzY0HS6KOBe1GIiNYoBOPbU3C2mM1pbORIqwKe+<br>
+            qMSWYFhcnKvesLeLuuPZ/DyKxxesO2FLenffUf1UzoNxQIqAgY7DeABmbTiduY9M<br>
+            4hadjD6zy3EHiWzPtjkw3uuHY41TQWxCoqDR56cQuTTD+XGMSXVI+TVdYUO0xWPN<br>
+            IEOc22y0xSV2MfRw4AS2aRy+GznG/jOEC/tu1pxMyKxCswARAQABiQElBBgBCAAP<br>
+            BQJYYUAdAhsMBQkDwmcAAAoJEIw+aA55+F4syyIH/1NQyjmOF42p/0Z0CqYaj8UY<br>
+            u+ekxVp6TrAwi6Ai758JiAxYQwynZW/S/QTSYur3GFfQqcCk2zkVjn8RqsegIBYo<br>
+            15XFvmeAaNP/JrVWSMz3zw6n9k27G7r4wGmeXbtjgSm9DpU9g9tzdEA8ljOUcUR0<br>
+            7PicJQr+BT4fNJsMRyETdKLv4UL95Au8j00GBlAxlD4Ipypsn+p61fY7UOhXY7lM<br>
+            GbFGA63R3SX/khrw861WOpU4e96O9KzpVjI6EDHGwZhrWaGiJORprHcvs99FKzAT<br>
+            qM6VAdOLmfY1WeM/vGUzPDiA8gjXEUkCm1bU2MJhYpc+gU+c1en631oGTR/z/zI=<br>
+            =NSOn<br>
+            -----END PGP PUBLIC KEY BLOCK-----<br>
+        </p>
     </div>
+</div>
 
-    <div id="who-i-am">
-        <div class="container">
-            <h1>Who I Am</h1>
-            <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
-            <p>
-                Ex aeque nominati gubergren duo, et modo maiestatis qui, reque dicam eos ea.
-                Ea accumsan copiosae platonem usu, te eum duis aliquid antiopam, meis debitis abhorreant pri ex.
-                Vim agam melius labores eu. Liber aliquam assueverit ei usu, oblique feugiat accusam nam ne.
-                Dicat evertitur ne vis, no eos sint habeo, causae pertinacia percipitur ad sit.
-                Zril appetere antiopam has eu. Quo te praesent expetendis delicatissimi, ius liber quodsi et,
-                ad agam appareat prodesset sed.
-            </p>
-        </div>
-    </div>
+<div id="blog">
+    <div class="container">
+        <h2>Blog posts</h2>
+        <div class="row">
 
-    <div id="what-i-do">
-        <div class="container">
-            <h1>What I Do</h1>
-            <h2>Sed ludus evertitur reprehendunt te, habemus dissentias per id.</h2>
-            <p>
-                Possim consectetuer sed ei, pri dico quando in, iudico ridens vix te.
-                Vix ei tation legimus definiebas, sit in admodum efficiantur.
-                Usu illud partem facilisi no. Sed ludus evertitur reprehendunt te, habemus dissentias per id.
-            </p>
-        </div>
-    </div>
-
-    <div id="blog">
-        <div class="container">
-            <h1>Blog posts</h1>
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 blog-thumbnail">
-                    <h3>
-                        <a href="/pages/2016/12/27/timing-attack.html">This should be 40-60 characters long bla.</a>
-                    </h3>
-                    <p class="post-length">5 minutes read</p>
-                    <p>This should be 140-160 characters long description. No mei putent recusabo consetetur, et laudem vis. Per cu delenit luptatum ea cu delenit.</p>
-                    <p class="post-date">27 Dec 2016</p>
+            <div class="col-xs-12 col-sm-6 col-md-4 blog-thumbnail">
+                <h2 class="post-title">
+                    <a href="https://medium.com/@TamasPolgar/what-to-do-with-5-000-000-akka-actors-381a915a0f78">How to Store Data with a Few Million Akka Actors</a>
+                </h2>
+                <div class="post-description">Using dictionary like data structures is very common in software engineering; storing indexed data, accessing stateful entities by id and so on. There are many ways and technologies to implement this; in this article I’m demonstrating a few ways how Akka actors can be used to store and access indexed data or entities.</div>
+                <div class="post-meta">
+                    <div class="inline">Apr 5</div>
+                    <div class="inline middle-dot">&middot;</div>
+                    <div class="inline">3 min read</div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 blog-thumbnail">
-                    <h3><a href="/pages/2016/09/18/documentation.html">This should be 40-60 characters long title. Bla b.</a></h3>
-                    <p class="post-length">5 minutes read</p>
-                    <p>This should be 140-160 characters long description. No mei putent recusabo consetetur, et laudem vis. Per cu delenit luptatum. Accusam propriae cum ea.</p>
-                    <p class="post-date">27 Dec 2016</p>
-                </div>
+            </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 blog-thumbnail">
-                    <h3>
-                        <a href="/pages/2016/12/27/timing-attack.html">This should be 40-60 characters long title. Bla bla bla bla.</a>
-                    </h3>
-                    <p class="post-length">5 minutes read</p>
-                    <p>This should be 140-160 characters long description. No mei putent recusabo consetetur, et stet vero laudem vis. Per cu delenit luptatum. Accusam propriae cum ea.</p>
-                    <p class="post-date">27 Dec 2016</p>
+            <div class="col-xs-12 col-sm-6 col-md-4 blog-thumbnail">
+                <h2 class="post-title">
+                    <a href="https://hackernoon.com/hack-how-to-use-securerandom-with-kubernetes-and-docker-a375945a7b21">Hack: How to Use SecureRandom with Kubernetes and Docker</a>
+                </h2>
+                <div class="post-description">Cryptographically secure pseudo-random number generator depends on good entropy; however from Docker containers we don’t always get this. This can cause the random generation be to block the execution of the application.</div>
+                <div class="post-meta">
+                    <div class="inline">Mar 14</div>
+                    <div class="inline middle-dot">&middot;</div>
+                    <div class="inline">2 min read</div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 blog-thumbnail">
+                <h2 class="post-title">
+                    <a href="https://hackernoon.com/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9">How to Hack a Weak JWT Implementation with a Timing Attack</a>
+                </h2>
+                <p>A timing attack is usually an overlooked threat. Is it just a fluke or can it really be pulled off on a real web server?</p>
+
+                <div class="post-meta">
+                    <div class="inline">Jan 8</div><div class="inline middle-dot">&middot;</div><div class="inline">6 min read</div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="contact">
-        <div class="container">
-            <h1>Contact</h1>
-            <p>
-                No mei putent recusabo consetetur, et stet vero laudem vis. Ad brute impedit duo.
-                Per cu delenit luptatum. Ei dolor graece vim. Accusam propriae cum ea.
-                Ei eum ornatus adolescens, id ius apeirian aliquando dissentias.
-            </p>
-            <p>
-                Here is my public key.
-            </p>
-            <p class="pgp-key">
-                -----BEGIN PGP PUBLIC KEY BLOCK-----<br>
-                Version: GnuPG v2<br>
-                <br>
-                mQENBFhhQB0BCADCLMhzazr9oggqevgYu449oYEyyb0YukMhjRqSUDaCmEx9LgxW<br>
-                eTCiXORUTd2NoLSY2Ko4uqDAF7ODpgoUMpbqtcu31yvTX0n35f2zx5ciMzBY9/Fu<br>
-                ocQsbUpirW8Zgp5+Ga+RgKDI4jXui7HxUQo/2hnO0QVvC0/vapaTHsTm1sjghsz0<br>
-                Yioyj2nMMLA+xLSDqg6roy5cQLF7FeUUTxCrLTC//i8wBeiBJpT65k7zcPJ6Wjyy<br>
-                HabMCfDDi8Gms43MYWJqQfKUrCLUFpEWYqjSI5qNPZ1KWskPeAWbGAJ4bf/DBrJx<br>
-                JCHceKZqAj3VHiLcB5HXgdk/GyXoFOGGhKJxABEBAAG0I1RhbWFzIFBvbGdhciA8<br>
-                dG1zLnBvbGdhckBnbWFpbC5jb20+iQE/BBMBCAApBQJYYUAdAhsDBQkDwmcABwsJ<br>
-                CAcDAgEGFQgCCQoLBBYCAwECHgECF4AACgkQjD5oDnn4XiwNXAf/dpNZnD6MeeU+<br>
-                e6rXRtIvUbGb7BaC4gSmweOx+If5sCI2fDfUnlTccktqP7o7Pz6eUIpjOlkoiUCl<br>
-                VZP/B5boPaslqymVh2OJTFCBe+n0jD/hhC/cUXFyc0HnMCav6ZC9+aPoaTk55BP9<br>
-                9kpews1rJ/aggqK54isLmA96i9YCbmUA5VAefaWHN68SmroIHYQIoI6EPY8WtWb6<br>
-                o71uvgG+kCWCPFsjQeY053OENwIEAFY7Rp4juKlZUOtBZWJUezM8BDf+F3qyMbQT<br>
-                Os8HfmuvWr85Z4JreljlQpkmKM3fvx6VV/Z9lz0fmiLb49XqR+FQA5jLTpavnqIc<br>
-                ldTMYgG5zrkBDQRYYUAdAQgA0dBH8Y9AkXjU7YyY1R5szYaiDyZXnFLKKyowH3rN<br>
-                5w+Uq+EQLpEmXiKJcPn32j0Yuvi3xKBKdtvYFFoW3qM+iriWZN2ME2WQuAuax8bA<br>
-                HqXYm90Tq0L8C5nFpzUKRyLwrCzY0HS6KOBe1GIiNYoBOPbU3C2mM1pbORIqwKe+<br>
-                qMSWYFhcnKvesLeLuuPZ/DyKxxesO2FLenffUf1UzoNxQIqAgY7DeABmbTiduY9M<br>
-                4hadjD6zy3EHiWzPtjkw3uuHY41TQWxCoqDR56cQuTTD+XGMSXVI+TVdYUO0xWPN<br>
-                IEOc22y0xSV2MfRw4AS2aRy+GznG/jOEC/tu1pxMyKxCswARAQABiQElBBgBCAAP<br>
-                BQJYYUAdAhsMBQkDwmcAAAoJEIw+aA55+F4syyIH/1NQyjmOF42p/0Z0CqYaj8UY<br>
-                u+ekxVp6TrAwi6Ai758JiAxYQwynZW/S/QTSYur3GFfQqcCk2zkVjn8RqsegIBYo<br>
-                15XFvmeAaNP/JrVWSMz3zw6n9k27G7r4wGmeXbtjgSm9DpU9g9tzdEA8ljOUcUR0<br>
-                7PicJQr+BT4fNJsMRyETdKLv4UL95Au8j00GBlAxlD4Ipypsn+p61fY7UOhXY7lM<br>
-                GbFGA63R3SX/khrw861WOpU4e96O9KzpVjI6EDHGwZhrWaGiJORprHcvs99FKzAT<br>
-                qM6VAdOLmfY1WeM/vGUzPDiA8gjXEUkCm1bU2MJhYpc+gU+c1en631oGTR/z/zI=<br>
-                =NSOn<br>
-                -----END PGP PUBLIC KEY BLOCK-----<br>
-            </p>
+<div id="footer">
+    <div class="container">
+        <div class="col-xs-6 copyright">
+            <span>Tamas Polgar © 2017</span>
+        </div>
+
+        <div class="col-xs-6 social">
+            <ul>
+                <li>
+
+                    <a href="https://github.com/tamaspolgar">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tamaspolgar">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="skype:tms.polgar?chat">
+                        <i class="fa fa-skype fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/TamasPolgar">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <div id="footer">
-        <div class="container">
-            <div class="col-xs-6 copyright">
-                <span>© 2016 .... All rights reserved.</span>
-            </div>
-            <div class="col-xs-6 social">
-                <ul>
-                    <li>
-                        <a href="...">
-                            <span>G</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="...">
-                            <span>L</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="...">
-                            <span>E</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="...">
-                            <span>T</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+</div>
 </body>
+
+</html>
