@@ -7,8 +7,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="I'm an independent software engineer based in London.">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"></link>
 
-    <!-- Vendor CSS -->
+
+      <!-- Vendor CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -345,13 +347,26 @@
         <h2>Blog posts</h2>
         <div class="row">
 
+
+            <div class="col-xs-12 col-sm-6 col-md-4 blog-thumbnail">
+                <h2 class="post-title">
+                    <a href="https://medium.com/@TamasPolgar/hack-how-to-use-scala-futures-with-cats-io-9278c7febc37">Hack: How to Use Scala Futures with Cats IO</a>
+                </h2>
+                <div class="post-description">It’s a common scenario to use plain Scala Futures with IO monads, such as Cats Effect’s IO, mainly as part of integrating “legacy” libraries with pure functional programming libraries. This article demonstrates a common trap you might fall into during the integration process.</div>
+                <div class="post-meta">
+                    <div class="inline">Jan 30</div>
+                    <div class="inline middle-dot">&middot;</div>
+                    <div class="inline">4 min read</div>
+                </div>
+            </div>
+
             <div class="col-xs-12 col-sm-6 col-md-4 blog-thumbnail">
                 <h2 class="post-title">
                     <a href="https://medium.com/@TamasPolgar/what-to-do-with-5-000-000-akka-actors-381a915a0f78">How to Store Data with a Few Million Akka Actors</a>
                 </h2>
                 <div class="post-description">Using dictionary like data structures is very common in software engineering; storing indexed data, accessing stateful entities by id and so on. There are many ways and technologies to implement this; in this article I’m demonstrating a few ways how Akka actors can be used to store and access indexed data or entities.</div>
                 <div class="post-meta">
-                    <div class="inline">Apr 5</div>
+                    <div class="inline">Apr 5, 2017</div>
                     <div class="inline middle-dot">&middot;</div>
                     <div class="inline">3 min read</div>
                 </div>
@@ -363,7 +378,7 @@
                 </h2>
                 <div class="post-description">Cryptographically secure pseudo-random number generator depends on good entropy; however from Docker containers we don’t always get this. This can cause the random generation be to block the execution of the application.</div>
                 <div class="post-meta">
-                    <div class="inline">Mar 14</div>
+                    <div class="inline">Mar 14, 2017</div>
                     <div class="inline middle-dot">&middot;</div>
                     <div class="inline">2 min read</div>
                 </div>
@@ -376,7 +391,7 @@
                 <p>A timing attack is usually an overlooked threat. Is it just a fluke or can it really be pulled off on a real web server?</p>
 
                 <div class="post-meta">
-                    <div class="inline">Jan 8</div><div class="inline middle-dot">&middot;</div><div class="inline">6 min read</div>
+                    <div class="inline">Jan 8, 2017</div><div class="inline middle-dot">&middot;</div><div class="inline">6 min read</div>
                 </div>
             </div>
         </div>
@@ -386,7 +401,7 @@
 <div id="footer">
     <div class="container">
         <div class="col-xs-6 copyright">
-            <span>Tamas Polgar © 2017</span>
+            <span>Tamas Polgar © 2020</span>
         </div>
 
         <div class="col-xs-6 social">
